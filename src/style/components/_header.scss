@@ -1,0 +1,33 @@
+.header {
+  height: $header-height;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: $dark-blue;
+  color: white;
+  font-size: 0.9rem;
+
+  & > * {
+    padding: 0 30px;
+  }
+
+  .header-info-producto {
+    width: $panel-izq;
+    border-right: 1px solid $blue;
+    font-size: 0.8rem;
+
+    .info-producto-nombre {
+      display: block;
+    }
+  }
+
+  .header-titulo {
+    flex: 1 0 auto;
+  }
+
+  .header-logo {
+    flex: 0 0 auto;
+    height: 20px;
+    min-width: 160px;
+  }
+}

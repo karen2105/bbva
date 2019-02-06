@@ -1,0 +1,40 @@
+.seleccion-certificado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+
+.certificados-lista li {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgrey;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(lightgrey, 0.1);
+  }
+
+  .certificado-nombre {
+    flex: 1 1 auto;
+    strong,
+    p {
+      margin: 0;
+      color: grey;
+      font-size: 0.8rem;
+    }
+
+    & > * {
+      display: block;
+    }
+  }
+
+  svg {
+    flex: 0 0 auto;
+    &.svg-list {
+      height: 30px;
+    }
+
+    flex: 0 0 auto;
+  }
+}

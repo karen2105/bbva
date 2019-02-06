@@ -1,0 +1,30 @@
+
+.main-wrapper {
+  height: 100vh;
+  min-height: 550px;
+}
+
+.main-content {
+  display: flex;
+  height: calc(100% - #{$header-height});
+}
+
+.contenido-titulo {
+  margin-top: 50px;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.contenido-descripcion {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+svg.radio {
+  height: 18px;
+  width: auto;
+  padding: 0 20px;
+  fill: $blue;
+}

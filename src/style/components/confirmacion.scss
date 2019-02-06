@@ -1,0 +1,58 @@
+.opciones {
+  width: 100%;
+  padding: 5%;
+}
+
+.tabla-confirmacion {
+  display: grid;
+  align-items: center;
+  height: 40px;
+  grid-template-areas: 'titulo seleccion edit';
+  grid-template-columns: 200px auto 20px;
+  border-bottom: 1px solid lightgrey;
+  font-weight: bold;
+  font-size: 0.7rem;
+
+  .titulo {
+    grid-area: 'titulo';
+    color: grey;
+  }
+
+  .seleccion {
+    grid-area: 'seleccion';
+    color: $success;
+  }
+
+  .balloon-wrapper {
+    position: relative;
+    grid-area: 'edit';
+    cursor: pointer;
+
+    .edit {
+      height: 15px;
+      width: auto;
+      fill: $blue;
+    }
+
+    .balloon {
+      position: absolute;
+      display:none;
+      width: 40px;
+      top: 25px;
+      left: -18px;
+      padding: 3px;
+      background-color: white;
+      border: 1px solid $blue;
+      opacity: 0;
+      text-align: center;
+      transition: 300ms ease all;
+    }
+
+    &:hover {
+      .balloon {
+        display: initial;
+        opacity: 1;
+      }
+    }
+  }
+}

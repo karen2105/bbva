@@ -1,0 +1,63 @@
+.descarga {
+  .descarga-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+    background-color: $success;
+  }
+
+  .primary-btn {
+    margin-top: 30px;
+    background-color: white;
+    color: $success;
+    font-weight: bold;
+  }
+
+  .warning {
+    display: flex;
+    flex-flow: row nowrap;
+    font-weight: bold;
+    color: white;
+    max-width: 500px; 
+    margin: 45px 30px 25px;
+    text-align: center;
+
+    svg {
+      height: 35px;
+      width: auto;
+      fill: white;
+      padding: 0 10px;
+      cursor: pointer;
+    }
+  }
+
+  .zona-descarga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    color: map-get($fonts, deemphasised);
+    font-weight: 400;
+
+    svg {
+      fill: lighten(lightgray, 5%);
+      width: auto;
+      height: 30px;
+      margin-bottom: 10px;
+      border: 16px solid rgba(lightgray, 0.2);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+
+  .info {
+    background-color: $info;
+    color: $blue;
+    padding: 5%;
+
+    strong {
+      display: block;
+    }
+  }
+}
